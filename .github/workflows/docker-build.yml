@@ -3,7 +3,7 @@ name: Build & Push Laravel and Nuxt Docker Images
 on:
   push:
     branches:
-      - main  # akan jalan otomatis saat push ke branch mai
+      - main  # akan jalan otomatis saat push ke branch main
 
 jobs:
   build-and-push:
