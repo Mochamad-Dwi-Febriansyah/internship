@@ -1,0 +1,96 @@
+
+body {
+  font-family: 'Satoshi', sans-serif;
+}
+
+@keyframes loading-bar {
+    0% {
+        left: -100%;
+        width: 30%;
+    }
+    50% {
+        left: 50%;
+        width: 50%;
+    }
+    100% {
+        left: 100%;
+        width: 30%;
+    }
+}
+
+.animate-loading {
+    animation: loading-bar 1.5s infinite ease-in-out;
+}
+
+
+  
+  /* Kunci animasi untuk rotasi */
+  @keyframes spin {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+
+  .rotate-spin {
+    animation: spin 1s infinite linear;
+  }
+
+
+  .toolbar {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    background: #fff;
+    padding: 8px;
+    border-radius: 8px;
+    border-bottom: 2px solid #ddd;
+    margin-bottom: .5rem;
+  }
+  
+  /* Tombol di toolbar */
+  .toolbar button {
+    background: #f1f1f1;
+    border: none;
+    padding: 6px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 500;
+    transition: 0.2s;
+  }
+  
+  .toolbar button:hover {
+    background: #e1e1e1;
+  }
+  
+  .toolbar button.is-active {
+    background: #0078d4;
+    color: white;
+  }
+
+
+
+  /* Hapus border & outline di editor */
+ 
+.tiptap.ProseMirror {
+  /* all: unset; Reset semua styling bawaan */
+  display: block;
+  width: 100%; 
+}
+.editor-wrapper{
+  border: 1px solid rgb(209 213 219); 
+  border-radius: 0.5rem;
+  padding: 0.625rem;
+  background-color: #ffffff;
+}
+/* Pastikan border tidak muncul saat focus */
+.tiptap.ProseMirror:focus,
+.tiptap.ProseMirror:focus-visible {
+  outline: none !important;
+  border: none !important;
+  box-shadow: none !important;
+}
+

@@ -1,0 +1,15 @@
+# Laravel
+pdam-backend/vendor/
+pdam-backend/node_modules/
+pdam-backend/storage/
+pdam-backend/.env
+
+# Nuxt
+pdam-frontend/node_modules/
+pdam-frontend/.nuxt/
+pdam-frontend/.output/
+pdam-frontend/.env
+
+# Others
+*.log
+.DS_Store
